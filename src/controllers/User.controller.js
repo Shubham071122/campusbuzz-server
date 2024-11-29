@@ -158,6 +158,7 @@ const updateProfile = async (req, res) => {
     if (!profileData) {
       throw new ApiError(400, 'No profile data provided for update');
     }
+    console.log("Jobinfo:",profileData.jobInfo);
 
     const { personalInfo, academicInfo, jobInfo, extraActivities, aboutSection, futurePlans } = profileData;
 
